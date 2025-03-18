@@ -29,6 +29,13 @@ This is a Spring Boot application that exposes an API to interact with the Open 
 ## API Endpoints
 
     GET /api/drug-records/search?manufacturerName=<name>&brandName=<brand>&page=<page> - Search for drugs.
+      example: GET http://localhost:8080/api/drug-records/search?manufacturerName=Gland
+
     POST /api/drug-records/<application_number> - Store a new drug record by its application number.
+      example: POST http://localhost:8080/api/drug-records/ANDA203349
+
     GET /api/drug-records - Get all stored drug records.
+      example: GET http://localhost:8080/api/drug-records
+
     GET /api/drug-records/<application_number> - Get stored drug by its application number.
+      example: GET http://localhost:8080/api/drug-records/ANDA203349
